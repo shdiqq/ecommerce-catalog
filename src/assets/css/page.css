@@ -1,0 +1,250 @@
+*{
+	font-family: "Inter", sans-serif;
+}
+/* Background.vue */
+#background {
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  width: 100vw;
+  height: 73vh;
+}
+
+.backgroundWoman {
+  background-color: #fde2ff;
+  background-image: url("../image/bg-pattern.svg");
+}
+
+.backgroundMan {
+  background-color: #d6e6ff;
+  background-image: url("../image/bg-pattern.svg");
+}
+
+.backgroundUnavaliable {
+	background-color: #DCDCDC;
+}
+
+/* BuyButton.vue */
+#buyButton button {
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 90%;
+  border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: not-allowed;
+}
+
+.buyButtonWoman button {
+  border: 2px solid #720060;
+  background-color: #720060;
+}
+
+.buyButtonMan button {
+  border: 2px solid #002772;
+  background-color: #002772;
+  color: white;
+}
+
+/* Loading.vue */
+.loader-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+			transform: rotate(0deg);
+	}
+
+	100% {
+			transform: rotate(360deg);
+	}
+}
+
+/* Product.vue */
+.view {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardContainer {
+	box-sizing: border-box;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: white;
+  width: 65%;
+  display: flex;
+}
+
+.card {
+	padding: 50px 30px 50px 30px;
+	display: flex;
+}
+
+.imageProduct {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+
+.imageProduct img {
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.contentContainer {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.titleProduct {
+	flex: 1;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 1.3;
+	display: flex;
+}
+
+.colorPalletteWoman {
+	color: #720060;
+}
+
+.colorPalletteMan {
+	color: #002772;
+}
+
+.categoryAndRatingProduct {
+	flex: 1;
+}
+
+.categoryAndRatingProductContainer {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.categoryProduct{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.descriptionProduct {
+	flex: 4;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.priceProductAndButton {
+	border-top: 1px solid rgb(206, 206, 206);
+	padding-top: 10px;
+	flex: 2;
+}
+
+.priceProduct {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.buttonContainer {
+	display: flex;
+}
+
+.buttonItem {
+	flex: 1;
+}
+
+.nextProduct {
+	background-color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 90%;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.nextProductWoman {
+	border: 2px solid #720060;
+	color: #720060;
+}
+
+.nextProductMan {
+	border: 2px solid #002772;
+	color: #002772;
+}
+
+.unavaliableView {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.unavaliableCard {
+	box-sizing: border-box;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	background-color: white;
+	width: 65%;
+	height: 65%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url("../image/sad-face.svg");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.unavaliableDescription{
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.nextButtonUnavaliable {
+	border: 3px solid black;
+	background-color: white;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px;
+	width: 50%;
+	margin-top: 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* ProductRatingComponent.vue */
+.ratingProduct {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 5px;
+  font-size: 18px;
+}
